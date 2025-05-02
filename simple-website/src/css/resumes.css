@@ -1,0 +1,53 @@
+.resumes {
+    padding: 2rem;
+    text-align: center;
+}
+
+.resumes h2 {
+    font-size: 1.8rem; /* Размер заголовка */
+    color: #01C38D; /* Зеленый цвет */
+    margin-bottom: 1rem; /* Отступ снизу */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.resume-columns {
+    display: flex; /* Используем flexbox для макета */
+    justify-content: space-between; /* Добавляем пространство между колонками */
+    gap: 2rem; /* Расстояние между колонками */
+    flex-wrap: nowrap; /* Предотвращаем перенос на следующую строку */
+    margin-bottom: 2rem; /* Расстояние между строками */
+}
+
+.resume-column {
+    flex: 2; /* Обеспечиваем равную ширину для обеих колонок */
+    max-width: 45%; /* Ограничиваем ширину каждой колонки */
+    background-color: #132D46; /* Темно-синий фон */
+    color: #FFFFFF; /* Белый текст */
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resume-column h2 {
+    color: #01C38D; /* Зеленый цвет для заголовков */
+    margin-bottom: 1rem;
+}
+
+.resume-column a {
+    color: #11D8A0; /* Зеленый цвет при наведении */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resume-column a:hover {
+    color: #01C38D; /* Изменение цвета при наведении */
+}
+
+.disabled-link {
+    text-decoration: line-through; /* Зачёркивание текста */
+    color: #696E79; /* Серый цвет для обозначения недоступности */
+    pointer-events: none; /* Отключение кликабельности */
+    cursor: default; /* Указатель мыши по умолчанию */
+}

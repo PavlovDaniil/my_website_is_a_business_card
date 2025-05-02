@@ -1,0 +1,229 @@
+:root {
+    --dark-blue: #191E29;
+    --navy-blue: #132D46;
+    --green: #01C38D;
+    --green-hover: #11D8A0;
+    --gray: #696E79;
+    --white: #FFFFFF;
+    --light-gray: #CCCCCC;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--white);
+  }
+  
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    background-color: var(--navy-blue);
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--green-hover);
+  }
+  
+  .full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1.25rem;
+    color: var(--light-gray);
+  }
+  
+  .about {
+    padding: 3rem 2rem;
+    background-color: var(--navy-blue);
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+  }
+  
+  .tech-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .tech-columns div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+  .tech-columns h3 {
+    color: var(--green);
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-columns ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+    color: var(--white);
+    text-align: left;
+  }
+
+  .tech-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Maintain spacing between items */
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    flex: 1 1 calc(25% - 2rem); /* Allow items to shrink and grow, with a base size */
+    max-width: calc(25% - 2rem); /* Set a maximum width */
+    min-width: 160px; /* Ensure a minimum width */
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .tech-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem; /* Add spacing between the image and text */
+  }
+
+  .tech-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .footer {
+    background-color: var(--navy-blue);
+    color: var(--gray);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex; /* Добавляем flexbox */
+    flex-wrap: wrap; /* Для адаптивности на маленьких экранах */
+    justify-content: space-around; /* Равномерное распределение секций */
+    gap: 2rem; /* Расстояние между секциями */
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section {
+    flex: 1; /* Секции занимают равное пространство */
+    min-width: 200px; /* Минимальная ширина секции */
+  }
+  
+  .footer-section h3 {
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: var(--green-hover);
+  }
+  
+  .footer p {
+    margin-top: 1rem;
+    color: var(--light-gray);
+  }
+
+  .resumes {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .resume-columns {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the columns */
+    gap: 2rem; /* Add spacing between columns */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  }
+
+  .resume-column {
+    flex: 1; /* Ensure equal width for both columns */
+    max-width: 45%; /* Limit the width of each column */
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .resume-column h2 {
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+
+  .resume-column a {
+    color: var(--green-hover);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .resume-column a:hover {
+    color: var(--green);
+  }
