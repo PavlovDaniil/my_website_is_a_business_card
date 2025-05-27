@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
   <header>
     <nav class="sticky-nav">
       <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#about">Обо мне</a></li> <!-- Updated to scroll to the about section -->
-        <li><a href="notes.html">Заметки</a></li>
-        <li><a href="https://github.com/PavlovDaniil">Проекты</a></li>
-        <li><a href="resumes.html">Резюме</a></li>
+        <li><a href="index.html" class="nav-button">Главная</a></li>
+        <li><a href="#about" class="nav-button">Обо мне</a></li>
+        <li><a href="notes.html" class="nav-button">Заметки</a></li>
+        <li><a href="projects.html" class="nav-button">Проекты</a></li>
+        <li><a href="resumes.html" class="nav-button">Резюме</a></li>
       </ul>
     </nav>
   </header>
@@ -68,6 +68,10 @@
               <img src="./images/icons/linux.svg" alt="Linux" class="tech-icon" />
               <span>Linux</span>
             </div>
+            <div class="tech-item">
+              <img src="./images/icons/redis.svg" alt="Redis" class="tech-icon" />
+              <span>Redis</span>
+            </div>
           </div>
         </div>
       </div>
@@ -103,5 +107,6 @@
     </div>
     <p>&copy; 2025 Ваше Имя. Все права защищены.</p>
   </footer>
+  <script src="./js/projects.js"></script>
 </body>
 </html>

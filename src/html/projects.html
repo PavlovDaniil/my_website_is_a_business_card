@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проекты</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script defer src="./js/projects.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="sticky-nav">
+      <ul>
+        <li><a href="index.html" class="nav-button">Главная</a></li>
+        <li><a href="projects.html" class="nav-button">Проекты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projects">
+      <h1>Мои проекты</h1>
+      <div class="svg-container">
+        <object id="structure-svg" data="./images/structure.svg" type="image/svg+xml"></object>
+      </div>
+      <div id="code-display" class="hidden">
+        <h3>Код сервиса</h3>
+        <pre><code id="service-code"></code></pre>
+      </div>
+      <div class="project-item" id="relational-db">
+        <h2>Relational DB</h2>
+        <p>Нажмите, чтобы увидеть код и базу данных.</p>
+      </div>
+      <div class="project-details hidden" id="relational-db-details">
+        <h3>Код</h3>
+        <pre><code>
+-- Пример SQL-кода для создания таблицы
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100) UNIQUE
+);
+        </code></pre>
+        <h3>База данных</h3>
+        <p>Пример базы данных: PostgreSQL</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Ваше Имя. Все права защищены.</p>
+  </footer>
+</body>
+</html>

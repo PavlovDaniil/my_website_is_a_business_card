@@ -1,0 +1,19 @@
+FROM
+
+FROM nginx:alpine
+
+# Копируем HTML, CSS, JS, изображения и другие файлы
+COPY . /usr/share/nginx/html
+
+# Копируем nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+# Копируем сертификаты
+COPY ./ssl /etc/nginx/ssl
+
+# Открываем порты
+EXPOSE 80
+EXPOSE 443
+
+# Запускаем nginx
+CMD ["nginx", "-g", "daemon off;"]
