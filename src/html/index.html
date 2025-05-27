@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио</title>
   <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/script.js" ></script>
 </head>
 <body>
   <header>
@@ -25,57 +26,40 @@
     </section>
 
     <section id="about" class="about full-screen">
-      <h2>Обо мне</h2>
-      <p>Я работаю с различными языками программирования и технологиями. Ниже список основных:</p>
-      <div class="tech-columns">
-        <div class="tech-block">
-          <h3>Языки</h3>
-          <div class="tech-grid">
-            <div class="tech-item">
-              <img src="./images/icons/java.svg" alt="Java" class="tech-icon" />
-              <span>Java</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/python.svg" alt="Python" class="tech-icon" />
-              <span>Python</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/bash.svg" alt="Bash" class="tech-icon" />
-              <span>Bash</span>
-            </div>
-          </div>
-        </div>
-        <div class="tech-block">
-          <h3>Технологии и стеки</h3>
-          <div class="tech-grid">
-            <div class="tech-item">
-              <img src="./images/icons/spring.svg" alt="Spring Boot" class="tech-icon" />
-              <span>Spring Boot</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/postgres.svg" alt="PostgreSQL" class="tech-icon" />
-              <span>PostgreSQL</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/docker.svg" alt="Docker" class="tech-icon" />
-              <span>Docker</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/fastapi.svg" alt="FastAPI" class="tech-icon" />
-              <span>FastAPI</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/linux.svg" alt="Linux" class="tech-icon" />
-              <span>Linux</span>
-            </div>
-            <div class="tech-item">
-              <img src="./images/icons/redis.svg" alt="Redis" class="tech-icon" />
-              <span>Redis</span>
-            </div>
-          </div>
-        </div>
+  <h2>Обо мне</h2>
+  <p>Ниже вы можете переключаться между моими основными направлениями.</p>
+
+  <div class="tabs">
+    <button class="tab-button active" data-tab="development">Разработка</button>
+    <button class="tab-button" data-tab="devops">DevOps и инструменты</button>
+  </div>
+
+  <div class="tab-contents-wrapper">
+    <div class="tab-content active" id="development">
+      <div class="tech-grid">
+        <div class="tech-item"><span>Java</span></div>
+        <div class="tech-item"><span>Python</span></div>
+        <div class="tech-item"><span>SQL</span></div>
+        <div class="tech-item"><span>PostgreSQL</span></div>
+        <div class="tech-item"><span>Redis</span></div>
+        <div class="tech-item"><span>Spring</span></div>
+        <div class="tech-item"><span>FastAPI</span></div>
+        <div class="tech-item"><span>Django</span></div>
+
       </div>
-    </section>
+    </div>
+
+    <div class="tab-content" id="devops">
+      <div class="tech-grid">
+        <div class="tech-item"><span>Docker</span></div>
+        <div class="tech-item"><span>Linux</span></div>
+        <div class="tech-item"><span>Git</span></div>
+        <div class="tech-item"><span>GitHub</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
   <footer class="footer">
     <div class="footer-container">

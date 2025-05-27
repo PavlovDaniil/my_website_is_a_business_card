@@ -7,7 +7,8 @@ This is a simple website project that demonstrates the basic structure of a web 
 ```
 simple-website
 ├── src
-│   ├── index.html        # Main HTML document
+│   ├── html        
+|   └── index.html    # HTML documents
 │   ├── css
 │   │   └── styles.css    # Styles for the website
 │   ├── js

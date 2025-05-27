@@ -56,13 +56,11 @@
   }
   
   .full-screen {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   
   .intro {
     padding: 4rem 2rem;
@@ -322,3 +320,65 @@
     background-color: var(--dark-blue);
     color: var(--white);
   }
+  .tabs {
+    display: flex;
+    justify-content: center; /* Выравниваем по центру всей строки */
+    gap: 1.5rem; /* Расстояние между кнопками */
+    margin-bottom: 2rem;
+  }
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 8px;
+  color: var(--green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 120px; /* Чтобы все кнопки были одного минимального размера */
+  text-align: center;
+}
+
+.tab-button:hover {
+  background-color: var(--green);
+  color: var(--dark-blue);
+}
+
+.tab-button.active {
+  background-color: var(--green);
+  color: var(--dark-blue);
+  font-weight: 700;
+  box-shadow: 0 0 10px var(--green);
+}
+
+.tab-content {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.tab-content {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tech-item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tech-item.hide {
+  opacity: 0;
+  transform: scale(0.7);
+  pointer-events: none;
+}
+
